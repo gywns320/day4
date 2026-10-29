@@ -25,7 +25,8 @@
 3. **Authentication → Sign In / Providers → Email** 이 켜져 있는지 확인합니다.
    - 개발 중 편하게 테스트하려면 *Confirm email* 을 끄면 가입 즉시 로그인됩니다. (운영에서는 켜두는 걸 권장)
 4. **SQL Editor → New query** 에 [`supabase/schema.sql`](supabase/schema.sql) 내용을 붙여넣고 **Run** → `favorites` 테이블이 생성됩니다.
-5. **Authentication → URL Configuration** 은 배포 후(6단계 뒤) 설정합니다.
+5. **장바구니 기능**: SQL Editor 에 [`supabase/cart.sql`](supabase/cart.sql) 내용을 붙여넣고 **Run** → `products`(샘플 상품 8개 포함), `cart_items` 테이블이 생성됩니다. 여러 번 실행해도 안전합니다.
+6. **Authentication → URL Configuration** 은 배포 후(6단계 뒤) 설정합니다.
 
 ## 2. Pixabay API 키
 

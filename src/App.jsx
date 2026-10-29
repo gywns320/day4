@@ -4,6 +4,8 @@ import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Gallery from './pages/Gallery.jsx';
 import Favorites from './pages/Favorites.jsx';
+import Shop from './pages/Shop.jsx';
+import Cart from './pages/Cart.jsx';
 import Login from './pages/Login.jsx';
 import Signup from './pages/Signup.jsx';
 import { useAuth } from './lib/auth.jsx';
@@ -31,7 +33,9 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/favorites" element={<RequireAuth><Favorites /></RequireAuth>} />
+          <Route path="/shop" element={<Shop />} />
+          <Route path="/cart" element={<RequireAuth><Cart /></RequireAuth>} />
+          <Route path="/favorites"element={<RequireAuth><Favorites /></RequireAuth>} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="*" element={<p className="center-note">길을 잃었어요 🌀 <a href="/">홈으로</a></p>} />
