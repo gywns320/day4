@@ -23,8 +23,8 @@ export default function App() {
       <Header />
       {!supabaseReady && (
         <div className="banner">
-          ⚙️ Supabase 환경변수(<code>VITE_SUPABASE_URL</code>, <code>VITE_SUPABASE_ANON_KEY</code>)가 아직 없어서 로그인 기능이 꺼져 있어요.
-          README의 설정 절차를 따라 .env 를 만들어 주세요.
+          ⚙️ Supabase 환경변수(<code>VITE_SUPABASE_URL</code>은 <code>https://…supabase.co</code> 형태, <code>VITE_SUPABASE_ANON_KEY</code>)가
+          없거나 형식이 올바르지 않아 로그인 기능이 꺼져 있어요. README의 설정 절차를 확인해 주세요.
         </div>
       )}
       <main>
